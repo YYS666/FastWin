@@ -11,3 +11,5 @@ make
 
 To execute:
 ./test.sh [csv file] [preceding] [following]
+
+The result indicate that if the number of predicate rows and following rows is determined, it is better to use removable cumulative aggegation, otherwise, it is better to use segment tree algorithm.
