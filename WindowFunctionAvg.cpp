@@ -197,9 +197,9 @@ void WindowFunctionAvg(
         int fanout = 4;
         
         int attributeToCompute = std::stoi(funAttribute) - 1;
-	//if(sum_levels.size() == 0){
-        	//buildLevels(fanout, attributeToCompute, dataset);
-        //}
+	if(sum_levels.size() == 0){
+        	buildLevels(fanout, attributeToCompute, dataset);
+        }
         std::cout << preceding << "     " << following << std::endl;
         removableCumulativeAvg(attributeToCompute, preceding, following, dataset);
         
